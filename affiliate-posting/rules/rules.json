@@ -1,0 +1,10 @@
+{
+  "timezone": "Asia/Jakarta",
+  "daily_slots": ["07:00", "15:00", "21:00"],
+  "marketplace_order": ["shopee", "tiktokshop", "lazada"],
+  "publish_only_status": "READY",
+  "never_invent": ["affiliate_link", "price", "commission", "stock", "seller", "product_claim"],
+  "missing_data_action": "HOLD",
+  "initial_test_window_days": 3,
+  "scale_after_success": [7, 30]
+}
