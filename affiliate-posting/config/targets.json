@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "targets": [
+    {
+      "target_id": "FB_IWAN",
+      "type": "facebook_page",
+      "enabled": true,
+      "make_connection_label": "FB_CONNECTION_IWAN",
+      "note": "Operational target. OAuth credentials are stored in Make, never in GitHub."
+    },
+    {
+      "target_id": "FB_ISTRI",
+      "type": "facebook_page",
+      "enabled": false,
+      "make_connection_label": "FB_CONNECTION_ISTRI",
+      "note": "Activate only after the wife's Facebook Page is authorized in Make."
+    }
+  ],
+  "rotation": {
+    "mode": "alternate_day",
+    "day_1": "FB_IWAN",
+    "day_2": "FB_ISTRI",
+    "repeat": true
+  }
+}
