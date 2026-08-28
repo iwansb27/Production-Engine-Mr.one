@@ -1,0 +1,26 @@
+{
+  "timezone": "Asia/Jakarta",
+  "schedule": [
+    {
+      "date": "2026-08-29",
+      "time": "07:00",
+      "product_id": "SP-001",
+      "marketplace": "shopee",
+      "status": "READY"
+    },
+    {
+      "date": "2026-08-29",
+      "time": "15:00",
+      "product_id": "TT-001",
+      "marketplace": "tiktokshop",
+      "status": "READY"
+    },
+    {
+      "date": "2026-08-29",
+      "time": "21:00",
+      "product_id": "LZ-001",
+      "marketplace": "lazada",
+      "status": "READY"
+    }
+  ]
+}
