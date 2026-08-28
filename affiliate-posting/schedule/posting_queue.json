@@ -1,11 +1,13 @@
 {
   "timezone": "Asia/Jakarta",
+  "rotation": "alternate_day",
   "schedule": [
     {
       "date": "2026-08-29",
       "time": "07:00",
       "product_id": "SP-001",
       "marketplace": "shopee",
+      "target_id": "FB_IWAN",
       "status": "READY"
     },
     {
@@ -13,6 +15,7 @@
       "time": "15:00",
       "product_id": "TT-001",
       "marketplace": "tiktokshop",
+      "target_id": "FB_IWAN",
       "status": "READY"
     },
     {
@@ -20,6 +23,7 @@
       "time": "21:00",
       "product_id": "LZ-001",
       "marketplace": "lazada",
+      "target_id": "FB_IWAN",
       "status": "READY"
     }
   ]
