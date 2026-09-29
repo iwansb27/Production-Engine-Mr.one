@@ -1,0 +1,11 @@
+{
+  "name": "mr-one-production-engine-bridge-test",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7"
+  }
+}
