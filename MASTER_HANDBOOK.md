@@ -12,9 +12,7 @@ This handbook is the permanent execution reference for the MR.ONE Production Eng
 
 Core rule: Build continuously through the defined stages. Do not ask for permission at every small implementation step.
 
-Within an authorized build run, complete the defined work for the current stage, test it, correct it, document the result, and continue to the next stage unless a destructive or irreversible action, credential/account connection, paid service, external publishing authorization, material architecture change, or hard technical blocker is encountered.
-
-Normal coding, file creation, refactoring, testing, UI work, documentation, and local/mock implementation do not require a new permission request when already covered by this handbook.
+Within an authorized build run, implement the complete defined roadmap in GitHub first. Do not require a Freebuff runtime test after every stage. Keep the repository in build/non-production mode while the system is being assembled. Use code-level, static, local/mock, and consistency validation during implementation. After all stages are integrated, perform one consolidated Freebuff validation cycle; fix the resulting issues in GitHub; then repeat only the necessary consolidated validation. Normal coding, file creation, refactoring, UI work, documentation, and local/mock implementation do not require a new permission request when already covered by this handbook.
 
 ## 1. NORTH STAR
 MR.ONE Production Engine turns an approved opportunity into a controlled production and distribution workflow.
@@ -118,14 +116,17 @@ Only after the complete controlled pipeline works.
 Possible capabilities: recommendations, queue optimization, content reuse, opportunity scoring, provider fallback, error recovery, workload routing.
 Automation must be bounded, auditable, and reversible. Do not autonomously control third-party platforms in violation of their terms.
 
-## 7. STAGE EXECUTION PROTOCOL
-1. BUILD — implement the complete scope of the current stage.
-2. PREVIEW — run the current application in Freebuff.
-3. TEST — execute acceptance tests.
-4. CORRECT — fix discovered failures.
-5. RETEST — run acceptance tests again.
-6. CHECKPOINT — record scope, result, corrections, limitations, next stage, and commit.
-7. CONTINUE — if passed and no approval/blocker condition exists, continue to the next stage without asking for another permission.
+## 7. STAGE EXECUTION PROTOCOL — CONSOLIDATED VALIDATION
+1. BUILD — implement the complete scope of all remaining stages in GitHub.
+2. INTEGRATE — connect cross-stage states, IDs, references, registry, audit, approval, queue, adapters, monitoring, analytics, and optimization.
+3. STATIC / LOCAL VALIDATION — check source consistency, build configuration, state transitions, data contracts, and mock paths without requiring the user to run Freebuff.
+4. DOCUMENT — maintain stage checkpoints and the final integrated acceptance plan in GitHub.
+5. FINAL FREEBUFF VALIDATION — only after the whole system is implemented, the user runs the full project in Freebuff once as a consolidated validation.
+6. CORRECT — use the consolidated Freebuff result to fix GitHub.
+7. RETEST — repeat the consolidated validation only when needed.
+8. FINALIZE — mark production readiness only after integrated acceptance criteria pass.
+
+Stage checkpoints remain implementation records; they are not requests for separate Freebuff tests.
 
 ## 8. WHEN TO STOP AND ASK
 Stop for human review only when the next action requires money, credentials, account authorization, external publishing, destructive deletion, irreversible migration, legal/terms-sensitive automation, or a material architecture change not covered by this handbook.
@@ -162,19 +163,21 @@ This repository is isolated. Never import or modify Home MR.ONE, AppDeploy proje
 Bridge: PASSED.
 Master Specification: INSTALLED.
 Master Handbook: INSTALLED.
-Current build stage: STAGE 2 — DISCOVERY CENTER.
-Current status: BUILT — GitHub implementation complete; Freebuff runtime verification pending.
-Previous stage: STAGE 1 — PASSED based on the Freebuff runtime report supplied by the user.
-Current objective: opportunity discovery, candidate cards, source URL, evidence, status, save/archive, search/filter, and handoff to Research.
-Checkpoint: STAGE_2_CHECKPOINT.md
+Stages 1–2: IMPLEMENTED in GitHub.
+Current build mode: FULL SYSTEM BUILD IN GITHUB.
+Freebuff runtime validation: DEFERRED until the complete integrated system is finished.
+Previous runtime evidence: Stage 1 Freebuff report supplied by the user passed clean install, Vite build, and dev-server readiness.
+Current objective: complete Stages 3–11 and integrate the entire pipeline before requesting one consolidated Freebuff validation.
+Checkpoints: STAGE_2_CHECKPOINT.md and stage checkpoint files as implementation records.
+Final validation documents: FINAL_INTEGRATION_PLAN.md and FINAL_ACCEPTANCE_TEST_PLAN.md.
 
 ## 14. FINAL OPERATING COMMAND
 When the user says LANJUTKAN, KERJAKAN, or Lanjut, interpret it as authorization to continue the already-defined build sequence.
 Do not repeatedly ask for permission for ordinary implementation steps covered by this handbook.
-Continue until the current authorized stage is complete and tested, a genuine blocker occurs, or a human-approval condition is reached. Then record the checkpoint in GitHub.
+Continue through the complete GitHub build sequence. Do not pause for per-stage Freebuff testing. Pause only for a genuine blocker or a human-approval condition. Record implementation checkpoints in GitHub, then use one consolidated Freebuff validation after the full system is integrated.
 
 ## 15. MASTER RULE
 Do not let the project drift.
 Always return to this handbook before a material implementation decision.
 Handbook = plan. GitHub = source of truth. Freebuff = build/runtime. Application = controlled continuous build.
-Execution pattern: Build → Test → Correct → Checkpoint → Continue.
+Execution pattern: Build all → Integrate → Static/Local Validate → Final Freebuff Validate → Correct → Retest → Finalize.
