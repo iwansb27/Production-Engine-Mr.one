@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.vly-run/
+.env
+.env.*
+!.env.example
