@@ -1,11 +1,9 @@
 {
-  "name": "mr-one-production-engine-bridge-test",
-  "private": true,
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "vite --host 0.0.0.0"
-  },
-  "devDependencies": {
-    "vite": "^7.1.7"
-  }
+  "name":"mr-one-production-engine",
+  "private":true,
+  "version":"0.1.0",
+  "type":"module",
+  "scripts":{"dev":"vite --host 0.0.0.0","build":"vite build"},
+  "dependencies":{"react":"^19.1.1","react-dom":"^19.1.1"},
+  "devDependencies":{"vite":"^7.1.7"}
 }
