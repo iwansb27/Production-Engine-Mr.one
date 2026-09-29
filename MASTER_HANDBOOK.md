@@ -162,10 +162,11 @@ This repository is isolated. Never import or modify Home MR.ONE, AppDeploy proje
 Bridge: PASSED.
 Master Specification: INSTALLED.
 Master Handbook: INSTALLED.
-Current build stage: STAGE 1 — APPLICATION FOUNDATION.
-Current status: BLOCKED — GitHub implementation complete; Freebuff runtime verification pending.
-Current objective: Control Center + Job + Workflow State + Approval Gateway + Registry + Audit/History.
-Checkpoint: STAGE_1_CHECKPOINT.md
+Current build stage: STAGE 2 — DISCOVERY CENTER.
+Current status: BUILT — GitHub implementation complete; Freebuff runtime verification pending.
+Previous stage: STAGE 1 — PASSED based on the Freebuff runtime report supplied by the user.
+Current objective: opportunity discovery, candidate cards, source URL, evidence, status, save/archive, search/filter, and handoff to Research.
+Checkpoint: STAGE_2_CHECKPOINT.md
 
 ## 14. FINAL OPERATING COMMAND
 When the user says LANJUTKAN, KERJAKAN, or Lanjut, interpret it as authorization to continue the already-defined build sequence.
