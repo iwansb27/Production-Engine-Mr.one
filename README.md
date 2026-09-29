@@ -1,12 +1,32 @@
 # MR.ONE Production Engine
 
-Free-first modular production engine for controlled opportunity-to-publication workflows.
+Standalone, isolated production engine for the pipeline:
 
-## Current checkpoint
-The Freebuff bridge test passed end-to-end:
-GitHub → Freebuff Cloud → sandbox → dependency install → dev server → preview.
+**Discovery → Research → Product → Content → Creative → Queue & Scheduler → Distribution → Monitoring → Analytics → Optimization**
 
-See `MASTER_SPEC.md` for the controlled build plan.
+## Source of truth
+GitHub repository: `iwansb27/Production-Engine-Mr.one`
 
-## Stage policy
-Only the current stage is implemented. Do not jump to external publishing or paid services before the relevant stage passes its acceptance test.
+## Runtime
+Freebuff is the final builder/runtime validation environment. The repository is intentionally kept non-production while the full system is assembled.
+
+## Current build status
+- Stage 0 bridge: PASSED from prior Freebuff evidence.
+- Stages 1–11: GitHub implementation/checkpoint coverage built.
+- External providers: adapter boundaries only; NOT CONNECTED.
+- Live publishing: disabled.
+- Secrets: none committed.
+- Final Freebuff validation: NOT YET RUN; intentionally deferred until the full integrated build is ready.
+
+## Validation strategy
+Do not test each stage separately in Freebuff. Build and integrate the whole system in GitHub first. Then run the complete application once in Freebuff using `FINAL_ACCEPTANCE_TEST_PLAN.md`. Return the consolidated result, fix GitHub, and retest only as necessary.
+
+## Key documents
+- `MASTER_HANDBOOK.md` — permanent execution rules.
+- `MASTER_SPEC.md` — system specification.
+- `FINAL_INTEGRATION_PLAN.md` — cross-stage integration contract.
+- `FINAL_ACCEPTANCE_TEST_PLAN.md` — one consolidated Freebuff acceptance run.
+- `STAGE_*_CHECKPOINT.md` — implementation checkpoints.
+
+## Safety
+No prohibited scraping, credential storage, autonomous third-party control, or automatic affiliate publishing is implemented.
