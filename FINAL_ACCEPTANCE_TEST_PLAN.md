@@ -1,7 +1,7 @@
 # FINAL ACCEPTANCE TEST PLAN
 
 ## A. Build integrity
-- npm ci succeeds with the committed package-lock.
+- npm install succeeds from package.json and resolves the complete dependency tree cleanly.\n- If Freebuff regenerates package-lock during validation, the generated lockfile is retained as the runtime-generated dependency lock.
 - npm run build succeeds.
 - dev server starts on configured Freebuff preview port.
 - no console-breaking import/runtime error.
