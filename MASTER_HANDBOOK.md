@@ -163,7 +163,9 @@ Bridge: PASSED.
 Master Specification: INSTALLED.
 Master Handbook: INSTALLED.
 Current build stage: STAGE 1 — APPLICATION FOUNDATION.
+Current status: BLOCKED — GitHub implementation complete; Freebuff runtime verification pending.
 Current objective: Control Center + Job + Workflow State + Approval Gateway + Registry + Audit/History.
+Checkpoint: STAGE_1_CHECKPOINT.md
 
 ## 14. FINAL OPERATING COMMAND
 When the user says LANJUTKAN, KERJAKAN, or Lanjut, interpret it as authorization to continue the already-defined build sequence.
